@@ -1,39 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rajdhani:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
-</head>
-<body class="flex justify-center">
-    <div class="bg">
-        <div><img src="/texperia gradient.png" class="line"></div>
-        <div><img src="/morph and powered by texperia.png" width="70" class="ml-64 mt-8" id="line"></div>
-<h4 class="text-white text-center mt-6">Hi,<input type="text" placeholder="( First name )" class="bg-transparent placeholder placeholder-white w-28 "></h4>
-<h1 class="text-white text-center ">CONGRATULATIONS  ON ACCEPTING THE OFFER.</h1> 
-<h1 class="text-white text-center">We’re looking forward to have you amongst us real soon!</h1>   
-<div class="flex flex-row justify-center justify-around ml-10 mr-10 bg-white mt-10 rounded-xl p-6">
-    <img src="/illustration.png" class="w-40" alt="">
-    <div class="flex-col">
-        <img class="w-60 mt-8" src="/Sit back, relax and let us welcome you. Congratulate yourself on beginning your transition from candidate to an employee. This is a checkpoint marking your exciting journey towards a successful future..png">
-    <a href="#"><img src="/experience here button.png" class="w-60 mt-8"></a>
-    </div>
-</div>
-<h1 class="text-white text-center mt-10">WHAT TO LOOK FORWARD TO</h1>
-<div class="flex justify-center"><img src="/what to look forward to.png" class="w-96 mt-6"></div>
-<div class="ml-10 mr-10 bg-white mt-10 rounded-xl p-6"><img src="/how it works.png" class=""></div>
-<img src="/organisation..png" class="p-6">
-<!--<img src="/Ellipse 119.png"  class="one">
-<img src="/Ellipse 119.png" width="60" class="two">
-<img src="/Ellipse 119.png" width="50" class="three">
-<img src="/Ellipse 119.png" width="40" class="four">
-<img src="/Ellipse 119.png" width="80" class="five">
-<img src="/Ellipse 119.png" width="60" class="six">
-<img src="/Ellipse 119.png" width="40" class="sev">-->
-</div>
-    
-</body>
+    <style>
+      html,
+      body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+      }
+
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+      }
+
+      table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+      }
+
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      *[x-apple-data-detectors],  /* iOS */
+.unstyle-auto-detected-links *,
+.aBn {
+        border-bottom: 0 !important;
+        cursor: default !important;
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      .a6S {
+        display: none !important;
+        opacity: 0.01 !important;
+      }
+
+      .im {
+        color: inherit !important;
+      }
+
+      img.g-img + div {
+        display: none !important;
+      }
+
+      @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+        u ~ div .email-container {
+          min-width: 320px !important;
+        }
+      }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+        u ~ div .email-container {
+          min-width: 375px !important;
+        }
+      }
+      @media only screen and (min-device-width: 414px) {
+        u ~ div .email-container {
+          min-width: 414px !important;
+        }
+      }
+    </style>
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      span,
+      a,
+      button {
+        font-family: "Rajdhani";
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .look-forward tr td {
+        width: 33%;
+        padding: 1em;
+      }
+
+      .look-forward p {
+        color: #ffffff;
+        font-size: 14px;
+        padding-top: 0.5em;
+      }
+
+      .how-it-works tr td {
+        padding: 1em;
+      }
+
+      .how-it-works p {
+        color: #000000;
+        font-weight: 500;
+        font-size: 14px;
+        padding-top: 2.5em;
+      }
+
+      .welcome td {
+        width: 50%;
+      }
+
+      @media only screen and (max-width: 480px) {
+        h1 {
+          font-size: 30px;
+        }
+        h2 {
+          font-size: 20px;
+        }
+        h3 {
+          font-size: 20px;
+        }
+        .top-bar td {
+          width: 100%;
+          display: block;
+          text-align: center !important;
+        }
+        .top-bar h2 {
+          margin-top: 0.5em !important;
+        }
+        .welcome td {
+          width: 100%;
+          display: block;
+          padding: 0 !important;
+        }
+        .welcome td:first-child,
+        .welcome td:last-child {
+          text-align: center;
+        }
+        .welcome td:first-child img {
+          width: 60% !important;
+        }
+        .welcome td:last-child h2 {
+          padding: 0 1em;
+          text-align: left;
+        }
+        .welcome td:last-child p {
+          text-align: left;
+          padding-right: 0;
+          padding: 0 1.5em;
+        }
+        .welcome td:last-child button {
+          margin-bottom: 2.5em;
+          font-size: 14px;
+        }
+
+        .look-forward-wrapper > td,
+        .how-it-works-wrapper > td {
+          padding: 2em 1.5em !important;
+        }
+
+        .look-forward tr td,
+        .how-it-works tr td {
+          padding: 0.5em 0.2em;
+        }
+
+        .footer p {
+          font-size: 13px !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body
+    width="100%"
+    style="margin: 0; padding: 0 !important;"
+  >
+ <div class="flex justify-center"> <img src="/texperia gradient.png" style="position:absolute; width: 47.5%;" id="line"></div>
+    <center style="width: 100%;">
+      <div
+        style="max-width: 600px; margin: 0 auto; background-color: #365CC1;"
+        class="email-container"
+      >
+        <table
+          align="center"
+          role="presentation"
+          cellspacing="0"
+          cellpadding="0"
+          border="0"
+          width="100%"
+          style="margin: auto;background-color: #365CC1; "
+        >
+          <tr>
+            <td valign="top" class="" style="padding: 1.5em 2em">
+              <table
+                role="presentation"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                width="100%"
+              >
+                <tr class="top-bar">
+                  <div  class="flex justify-center">
+                    <img src="/morph and powered by texperia.png" width="55">
+                  </div>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr
+            style="
+              background-image: url('[[base_path]]assets/emailers/BG_600.png');
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+            "
+          >
+            <td valign="top">
+              <table
+                role="presentation"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                width="100%"
+              >
+                <tr
+                  style="
+                    background-image: url('[[base_path]]assets/emailers/bg.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                  "
+                >
+                  <td style="padding: 0; text-align: center; color: #fff">
+                    <p>Hi <input type="text" placeholder="(your name)" class="bg-transparent w-20"></p>
+                    <h1 style="line-height: 1.5">CONGRATULATIONS  ON ACCEPTING THE OFFER.</h1>
+                    <p>
+                        We’re looking forward to have you amongst us real soon!</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr class=" flex flex-row justify-center justify-around ml-10 mr-10 bg-white mt-10 rounded-xl"
+            style="
+            background-color: #ffffff;
+            "
+          >
+            <td valign="top">
+              <table
+                role="presentation"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                width="100%"
+               
+              >
+                <tr class="welcome">
+                  <td style="padding: 1em">
+                    <img
+                      src="/illustration.png"
+                      alt=""
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td style="padding: 2.5em 0">
+                    
+                    <p
+                      style="
+                        color: #07003b;
+                        font-size: 13px;
+                        font-weight: 500;
+                        line-height: 1.5;
+                        padding-right: 1.5em;
+                        
+                      "
+                    >
+                      Sit back, relax and let us welcome you. Congratulate
+                      yourself on beginning your transition from candidate to an
+                      employee. This is a checkpoint marking your exciting
+                      journey towards a successful future.
+                    </p>
+                    <div
+                      style="
+                        margin-top: 2.5em;
+                        margin-bottom: 2.5em;
+                      "
+                    >
+                      <a
+                        href="[[action_link]]"
+                        target="_blank"
+                        style="
+                          color: #ffffff;
+                          background-color: #ff5670;
+                          font-size: 12px;
+                          font-weight: 700;
+                          padding: 0.7em 4.5em;
+                          border: none;
+                          border-radius: 20px;
+                          text-decoration: none;
+                        "
+                      >
+                      EXPERIENCE HERE
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr style="background-color: #365CC1" class="look-forward-wrapper">
+            <td valign="top" style="padding: 3.5em">
+              <table
+                role="presentation"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                width="100%"
+              >
+                <tr>
+                  <td style="width: 100%; text-align: center">
+                    <h2
+                      style="
+                        color: #ffffff;
+                        font-weight: 700;
+                        margin-bottom: 1em;
+                      "
+                    >
+                      What to look forward to
+                    </h2>
+                  </td>
+                </tr>
+              </table>
+              <table class="look-forward">
+                <tr style="padding: 1em 0; text-align: center">
+                  <td>
+                    <img src="/Mask group.png" width="50" class="bg-gray-500 rounded-xl p-2 ml-10" alt="" />
+                    <p>What value <br />we offer.</p>
+                  </td>
+                  <td>
+                    <img src="/8150392_ar_augmented reality_augmented_innovation_vr_icon 1.png" class=" ml-10 bg-gray-500 rounded-xl p-2" width="50" alt="" />
+                    <p>Augmented Reality welcome experience</p>
+                  </td>
+                  <td>
+                    <img src="/Mask group (1).png" width="50" class="bg-gray-500 rounded-xl p-2 ml-10" alt="" />
+                    <p>Introduce yourself with your own webpage</p>
+                  </td>
+                </tr>
+                <tr style="padding: 1em 0; text-align: center">
+                  <td>
+                    <img src="/games-control-svgrepo-com 1.png" width="50" class="bg-gray-500 rounded-xl p-2 ml-10" alt="" />
+                    <p>Videos and <br />Games.</p>
+                  </td>
+                  <td>
+                    <img src="/9529303491582967224 1.png" width="50" class="bg-gray-500 rounded-xl p-2 ml-10" alt="" />
+                    <p>Animated <br />Survey.</p>
+                  </td>
+                  <td>
+                    <img src="/Group 1000001024.png" width="50" class="bg-gray-500 rounded-xl p-2 ml-10" alt="" />
+                    <p>Interactive <br />content.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr  class=" flex flex-row justify-center justify-around ml-10 mr-10 bg-white mt-2 rounded-xl"
+            
+            class="how-it-works-wrapper"
+          >
+            <td
+              valign="top"
+              style="padding-top: 6%;"
+            >
+              <table
+                role="presentation"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                width="100%"
+              >
+                <tr>
+                  <td style="width: 100%; text-align: center">
+                    <h2
+                      style="
+                        color: #000000;
+                        font-weight: 700;
+                
+                      "
+                    >
+                      How it works
+                    </h2>
+                  </td>
+                </tr>
+              </table>
+              <table class="how-it-works">
+                <tr style="padding: 1em 0; text-align: center">
+                  <td>
+                    <img
+                      src="/Group 1000001026.png"
+                      alt=""
+                      style="width: 65%" class="ml-6"
+                    />
+                    <p>Use this email id to generate an OTP</p>
+                  </td>
+                  <td>
+                    <img
+                      src="/Group 1000001027.png"
+                      alt=""
+                     
+                    />
+                  </td>
+                  <td>
+                    <img
+                      src="/p.png"
+                      alt="" class="ml-4"
+                      style="width: 80%"
+                    />
+                    <p>Enter the OTP to login.</p>
+                  </td>
+                  <td>
+                    <img
+                      src="/Group 1000001027.png"
+                      alt=""
+                      
+                    />
+                  </td>
+                  <td>
+                    <img
+                      src="/Group.png"
+                      alt="" class="ml-4"
+                      style="width: 65%"
+                    />
+                    <p>Start you Onboarding Journey.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" style="padding: 1.2em">
+              <table
+                role="presentation"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                width="100%"
+              >
+                <tr class="footer">
+                  <td style="width: 100%; text-align: center">
+                    <p style="color: #ffffff; font-size: 10px">
+                      This email has been sent to you from Texperia on behalf of
+                      your hr/ organisation. For any queries, contact your hr/
+                      organisation.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </center>
+  </body>
 </html>
